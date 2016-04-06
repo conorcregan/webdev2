@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="Mystylesabout.css" rel="stylesheet" type="text/css">
+
+
+<script>
+var timeout	= 500;
+var closetimer	= 0;
+var ddmenuitem	= 0;
+
+// open hidden layer
+function mopen(id)
+{
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose;
+</script>
+
+
+</head>
+
+</head>
+
+<body background="background.jpg">
+<div id="Wrapper">
+  <div id="header">
+    <img src="header.jpg" width="1000" height="201"
+
+  </div>
+  <div id="navbar">
+  <ul id="sddm">
+  	<li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="photography.html">Photography</a></li>
+    <li><a href="#"
+	        onmouseover="mopen('m1')"
+	        onmouseout="mclosetime()">Productions</a>
+	        <div id="m1"
+	            onmouseover="mcancelclosetime()"
+	            onmouseout="mclosetime()">
+	        <a href="design.html">Design</a>
+	        <a href="media.html">Media</a>
+        </div>
+
+</ul>
+  <div id="content1">
+  <br><br><center><img src="aboutme.jpg" width="997" height="225" alt=""/></center>
+
+      <p>My name is Conor Cregan and I am an Irish student studying Creative Digital Media.
+      <br>
+      <br>
+      I am 20 years old and am very interested in creating. This portfolio website contains a look my work in different fields such as photography, graphic designs, and video productions.
+      <br>
+      <br>
+      I have a level 6 FETAC certificate in Digital Media and am currently in year 1 of a Level 8 honours degree course in University in Dublin, Ireland.
+      <br>
+      <br>
+      In the future I will expand my work and use this website as a database for my creations. </p>
+</div>
+  <footer>
+    <p><font color="white">© Conor Cregan 2016</font></p>
+    <p><font color="white">Contact information: <a href="mailto:conorc456@gmail.com">conorc456@gmail.com</a>.</font></p>
+</footer>
+
+
+
+
+
+
+</div>
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+</script>
+</body>
+</html>

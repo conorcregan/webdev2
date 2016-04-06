@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="Mystylesphotography.css" rel="stylesheet" type="text/css">
+
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript">
+thisImg=1;
+imgCt=4
+function newSlide(direction) {
+thisImg=thisImg+direction;
+if (thisImg==0){thisImg=imgCt;}
+if (thisImg==imgCt+1) {thisImg=1;}
+document.getElementById('slideshow').src=thisImg+'.jpg';
+}
+</script>
+
+<script>
+var timeout	= 500;
+var closetimer	= 0;
+var ddmenuitem	= 0;
+
+// open hidden layer
+function mopen(id)
+{
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose;
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+
+</head>
+
+</head>
+
+<body onLoad="MM_preloadImages('rollover 1 2.jpg','rollover 2 2.jpg','rollover 3 2.jpg')">
+<body background="background.jpg">
+<div id="Wrapper">
+  <div id="header">
+    <img src="header.jpg" width="1000" height="201"
+
+  </div>
+  <div id="navbar">
+    <ul id="sddm">
+    	<li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="photography.html">Photography</a></li>
+      <li><a href="#"
+  	        onmouseover="mopen('m1')"
+  	        onmouseout="mclosetime()">Productions</a>
+  	        <div id="m1"
+  	            onmouseover="mcancelclosetime()"
+  	            onmouseout="mclosetime()">
+  	        <a href="design.html">Design</a>
+  	        <a href="media.html">Media</a>
+        </div>
+</ul>
+  <div id="content">
+    <img src="photography.jpg" width="1001" height="92" alt=""/>
+
+<center>
+  <a href="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xft1/v/t1.0-9/12417554_1186663368010411_8931297634901933767_n.jpg?oh=f9f05ccbbc975068db71167fe7a28e99&oe=57774861&__gda__=1467311360_9a4f0d9c92c1ae06bc8cc0cc4f2d4508" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('rollover 1','','rollover 1 2.jpg',1)"><img src="rollover 1 1.jpg" alt="" width="307" height="436" id="rollover 1"></a>
+  <a href="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xlp1/v/t1.0-9/12924609_1186663338010414_8344570312689057602_n.jpg?oh=3927fce992bb5997af25dc1a7b2c11c4&oe=57827911&__gda__=1471984644_8c2a7c0a08cc24d006fef9f2a9f095af" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('rollover 2','','rollover 2 2.jpg',1)"><img src="rollover 2 1.jpg" alt="" width="322" height="436" id="rollover 2"></a>
+  <a href="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/12321516_1186663361343745_669508087801435808_n.jpg?oh=053a80e68fc1fe6c6105f42f7ecc364b&oe=57BC248E&__gda__=1467538998_43402185a3a4e19d3e7d31e32d606530" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('rollover 3','','rollover 3 2.jpg',1)"><img src="rollover 3 1.jpg" alt="" width="328" height="436" id="rollover 3"></a>
+  <img class="img-circle" src="photo4.jpg">
+  <img class="img-circle" src="photo5.jpg">
+  </div></center>
+
+  <div id="footer">
+  <footer>
+      <p><font color="white">© Conor Cregan 2016</font></p>
+      <p><font color="white">Contact information: <a href="mailto:conorc456@gmail.com">conorc456@gmail.com</a>.</font></p>
+</footer>
+  </div>
+
+
+
+
+
+
+</div>
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+</script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+
+#Wrapper {
+	background-color: #666;
+	height: auto;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#header {
+	background-color: #FFF;
+	height: 200px;
+	width: 1000px;	
+}
+#navbar {
+	background-color: #FFF;
+	height: 100px;
+	width: 1000px;
+}
+#content {
+	background-color: #FFF;
+	height: 1100px;
+	width: 1000px;
+}
+#content1 {
+	background-color: #FFF;
+	height: 800px;
+	width: 1000px;
+}
+#content2 {
+	background-color: #FFF;
+	height: 800px;
+	width: 1000px;
+}
+#conleft {
+	background-color: #FFF;
+	float: left;
+	height: 1100px;
+	width: 400px;
+}
+#conright {
+	background-color: #FFF;
+	float: right;
+	height: 1100px;
+	width: 600px;
+}
+#footer {
+	background-color: #000;
+	height: 100px;
+	width: 1000px;
+}
+h1 {
+	text-align:center;
+	font-family:Verdana, Geneva, sans-serif;
+	text-decoration:underline;
+	color:#000;
+}
+p  {
+	padding-left: 30px;
+	padding-right: 30px;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#000;
+	font-size:14px;
+	border:#000 solid 2px;
+}
+#sddm
+{	margin: 0;
+	padding: 0;
+	z-index: 30}
+
+#sddm li
+{	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	font: 20px impact}
+
+#sddm li a
+{	display: block;
+	margin: 0 1px 0 0;
+	padding: 4px 94.5px;
+	width: 60px;
+	background: #6E6E6E;
+	color: #F8E0E6;
+	text-align: center;
+	text-decoration: none}
+
+#sddm li a:hover
+{
+	background-color: #000000;
+	background-image: url(background.jpg);
+	background-attachment: fixed;
+	background-repeat: repeat;
+}
+
+#sddm div
+{	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: #EAEBD8;
+	border: 1px solid #5970B2}
+
+	#sddm div a
+	{
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 5px 10px;
+	width: auto;
+	white-space: nowrap;
+	text-align: left;
+	text-decoration: none;
+	color: #2875DE;
+	font: 11px arial;
+	background-color: #000000;
+}
+
+	#sddm div a:hover
+	{
+	color: #FFF;
+	background-color: #49A3FF;
+	background-image: url(background.jpg);
+}
+a:link {
+text-decoration: none;
+}
+
+
+.container { 
+	     width: 420px;
+	   }
+
+.block	{ width: 100px;
+	 height: 100px;
+	 display: inline-block;
+	 }
+	 
+.red { background-color:#FF0000;
+}
+
+
+.blue { background-color: #000DFF;
+}
+
+.yellow	{ background-color: #D5FF00;
+}
+
+.white { background-color: #FFFFFF;
+	}
+
+.middle { width: 100px;
+	 height: 100px;
+	 display: inline-block;
+	background-color: #FF0000;
+	position: relative;
+	bottom: 260px; 
+	left: 160px;
+}
